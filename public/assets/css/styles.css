@@ -1,81 +1,94 @@
+/* Styling for HTML and Body */
 html,
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  height: 100%; /* Full height */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
 }
 
+/* Styling for save-note class */
 .save-note {
-  display: none;
+  display: none; /* Hidden by default */
 }
 
+/* Styling for icons */
 .icons i {
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 1.5rem;
-  cursor: pointer;
+  margin-left: 15px; /* Left margin */
+  margin-right: 15px; /* Right margin */
+  font-size: 1.5rem; /* Font size */
+  cursor: pointer; /* Cursor style */
 }
 
+/* Styling for note-textarea and note-title */
 .note-textarea,
 .note-title {
-  color: #000000;
-  width: 100%;
-  outline: none;
-  border: none;
+  color: #000000; /* Text color */
+  width: 100%; /* Full width */
+  outline: none; /* No outline */
+  border: none; /* No border */
 }
 
+/* Styling for note-textarea */
 .note-textarea {
-  resize: none;
-  height: calc(100% - 63px);
-  padding-top: 15px;
+  resize: none; /* Prevent resizing */
+  height: calc(100% - 63px); /* Height calculation */
+  padding-top: 15px; /* Top padding */
 }
 
+/* Styling for note-title */
 .note-title {
-  margin-top: 13px;
-  padding-bottom: 13px;
-  font-size: 3rem;
-  line-height: normal;
-  font-family: Arial, sans-serif;
-  font-weight: normal;
+  margin-top: 13px; /* Top margin */
+  padding-bottom: 13px; /* Bottom padding */
+  font-size: 3rem; /* Font size */
+  line-height: normal; /* Normal line height */
+  font-family: Arial, sans-serif; /* Font family */
+  font-weight: normal; /* Normal font weight */
 }
 
+/* Styling for read-only note-title and note-textarea */
 .note-title:read-only,
 .note-textarea:read-only {
-  color: #757575;
+  color: #757575; /* Text color */
 }
 
+/* Styling for list-container and card */
 .list-container .card {
-  height: calc(100vh - 70px);
-  border-bottom: none;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  height: calc(100vh - 70px); /* Height calculation */
+  border-bottom: none; /* No bottom border */
+  border-bottom-right-radius: 0; /* No bottom right border radius */
+  border-bottom-left-radius: 0; /* No bottom left border radius */
 }
 
+/* Styling for list-container */
 .list-container {
-  padding-left: 0;
+  padding-left: 0; /* No left padding */
 }
 
+/* Styling for list-group, list-group-item, and card within list-container */
 .list-container .list-group,
 .list-container .list-group-item:first-child,
 .list-container .card {
-  border-top: none;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+  border-top: none; /* No top border */
+  border-top-right-radius: 0; /* No top right border radius */
+  border-top-left-radius: 0; /* No top left border radius */
 }
 
+/* Styling for list-item-title */
 .list-item-title {
-  display: inline-block;
-  width: 75%;
+  display: inline-block; /* Inline block display */
+  width: 75%; /* Width */
 }
 
+/* Styling for list-container i */
 .list-container i {
-  font-size: 1.1rem;
-  cursor: pointer;
+  font-size: 1.1rem; /* Font size */
+  cursor: pointer; /* Cursor style */
 }
 
+/* Styling for list-container list-group-item */
 .list-container .list-group-item {
-  border-left: none;
-  border-right: none;
-  padding: 20px;
-  cursor: pointer;
+  border-left: none; /* No left border */
+  border-right: none; /* No right border */
+  padding: 20px; /* Padding */
+  cursor: pointer; /* Cursor style */
 }

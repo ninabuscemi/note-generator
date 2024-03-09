@@ -1,7 +1,7 @@
 // Importing required modules and dependencies
 const notesRouter = require('express').Router();
-const { v4: uuidv4 } = require('uuid'); // Importing UUID for generating unique identifiers
 const path = require('path');
+const { v4: uuidv4 } = require('uuid'); // Importing UUID for generating unique identifiers
 
 // Importing helper functions for file system operations
 const { readAndAppend, readFromFile, writeToFile } = require('../helpers/fsUtils');
@@ -46,14 +46,14 @@ notesRouter.delete('/:id', (req, res) => {
     .then(data => {
       let notes = JSON.parse(data); // Parsing JSON data from file
 
-      console.log('Notes before deletion:', notes); // Logging notes before deletion
+      console.log('Logging notes before deletion:', notes); // Logging notes before deletion
 
       const noteIndex = notes.findIndex(note => note.note_id === idToDelete); // Finding index of note to delete
 
       console.log('Note Index to delete:', noteIndex); // Logging index of note to delete
 
       if (noteIndex === -1) { // Checking if note exists
-        return res.status(404).json({ error: 'Note not found' }); // Sending error response if note not found
+        return res.status(404).json({ error: 'Note not found!' }); // Sending error response if note not found
       }
 
       notes.splice(noteIndex, 1); // Removing note from array
@@ -65,7 +65,7 @@ notesRouter.delete('/:id', (req, res) => {
     })
     .catch(err => {
       console.error('Error:', err); // Logging error
-      return res.status(500).json({ error: 'Error reading or writing to the database file' }); // Sending error response
+      return res.status(500).json({ error: 'Error reading or writing to the database file!' }); // Sending error response
     });
 });
 
