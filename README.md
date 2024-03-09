@@ -1,5 +1,7 @@
 # Note Taking Generator
 
+![License Badge](https://badgen.net/static/license/MIT/blue)
+
 ## Description
 
 The Note Taking Generator website is used to write and save notes. This application will use an Express.js back-end and front-end code where it saves and retrieves note data from a JSON file.
@@ -41,7 +43,9 @@ To run the Note Taker App locally, follow these steps:
 
 ## Usage
 
-![screenshot](./assets/note_gen_insomnia.gif)
+![insomnia](./assets/note_gen_insomnia.gif)
+
+![insomnia](./assets/note_gen_insomnia.gif)
 
 ## Contributing
 
