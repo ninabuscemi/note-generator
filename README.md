@@ -39,6 +39,10 @@ To run the Note Taker App locally, follow these steps:
 
 7. Continue creating, viewing, and deleting notes as needed.
 
+## Usage
+
+![screenshot](./assets/note_gen_insomnia.gif)
+
 ## Contributing
 
 Contributions to the Note Generator are welcome! If you find any issues or have suggestions for improvements, please submit a pull request. Make sure to follow the repository's code style and guidelines.
