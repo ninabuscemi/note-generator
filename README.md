@@ -1,8 +1,8 @@
-# Note Generator
+# Note Taking Generator
 
 ## Description
 
-The Note Generator is used to write and save notes. This application will uses an Express.js back end and saves and retrieves note data from a JSON file.
+The Note Taking Generator website is used to write and save notes. This application will use an Express.js back-end and front-end code where it saves and retrieves note data from a JSON file.
 
 ## User Story 
 
@@ -29,3 +29,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ## Contributing
 
 Contributions to the Note Generator are welcome! If you find any issues or have suggestions for improvements, please submit a pull request. Make sure to follow the repository's code style and guidelines.
+
+## License
+
+MIT License
