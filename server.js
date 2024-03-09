@@ -6,8 +6,6 @@ const app = express(); // Creating an instance of the express application
 
 const PORT = process.env.PORT || 3001; // Specifying the server port
 
-
-
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
