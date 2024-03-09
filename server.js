@@ -1,25 +1,24 @@
+// Including essential modules and dependencies
 const express = require('express');
 const path = require('path');
-const { clog } = require('./middleware/clog');
-const api = require('./routes/index.js');
-const app = express();
+const { clog } = require('./middleware/clog'); // Importing a custom middleware for logging purposes
+const apiRoutes = require('./routes/index.js'); // Importing routes for the API
+const app = express(); // Creating an instance of the express application
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001; // Specifying the server port
 
-// Import custom middleware, "cLog"
+// Adding custom middleware for logging
 app.use(clog);
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// This line sets up a route for handling API requests.
-app.use('/api', api);
+// Setting up routes for API requests
+app.use('/api', apiRoutes);
 
-
-// This line serves static files from the 'public' directory.
+// Serving static files from the 'public' directory
 app.use(express.static('public'));
-
 
 // GET Route for homepage
 app.get('/', (req, res) =>
@@ -31,11 +30,12 @@ app.get('/notes', (req, res) =>
     res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
-// Wildcard route to direct users to index.html
+// Wildcard route to redirect users to index.html if route not found
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'))
 });
 
+// Starting the server and listening on the specified port
 app.listen(PORT, () =>
-    console.log(`App listening at http://localhost:${PORT}`)
+    console.log(`Server is running and listening at http://localhost:${PORT}`)
 );

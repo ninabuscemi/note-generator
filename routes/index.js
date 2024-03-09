@@ -1,14 +1,14 @@
-// Requires the Express framework
+// Importing the Express framework
 const express = require('express');
 
-// Imports the modular router for handling notes-related routes
+// Importing the modular router for managing notes-related routes
 const notesRouter = require('./notes');
 
-// Creates an instance of the Express router
+// Creating an instance of the Express router
 const api = express.Router();
 
-// Mounts the notes router under the '/notes' path
+// Mounting the notes router under the '/notes' path
 api.use('/notes', notesRouter);
 
-// Exports the API router for use in other modules
+// Exporting the API router to enable its use in other modules
 module.exports = api;

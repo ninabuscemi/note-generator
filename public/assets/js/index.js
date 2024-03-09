@@ -1,10 +1,13 @@
+// Declare variables to hold DOM elements related to notes
 let noteTitle;
 let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
+// Check if the current page is the notes page
 if (window.location.pathname === '/notes') {
+  // Assign DOM elements to variables
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
   saveNoteBtn = document.querySelector('.save-note');
@@ -22,7 +25,7 @@ const hide = (elem) => {
   elem.style.display = 'none';
 };
 
-// Set up a click event listener for each note in the list
+// Set up click event listeners for each note in the list
 const setupNoteClickHandlers = () => {
   const noteItems = document.querySelectorAll('.list-group-item');
 
@@ -46,10 +49,10 @@ const setActiveNote = (note) => {
   renderActiveNote();
 };
 
-
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
+// Fetch notes from the API
 const getNotes = () =>
   fetch('/api/notes', {
     method: 'GET',
@@ -58,6 +61,7 @@ const getNotes = () =>
     },
   });
 
+// Save a note to the API
 const saveNote = (note) =>
   fetch('/api/notes', {
     method: 'POST',
@@ -67,6 +71,7 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   });
 
+// Delete a note from the API
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
