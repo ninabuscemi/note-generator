@@ -4,27 +4,40 @@
 
 The Note Taking Generator website is used to write and save notes. This application will use an Express.js back-end and front-end code where it saves and retrieves note data from a JSON file.
 
-## User Story 
+## Installation
 
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+To run the Note Taker App locally, follow these steps:
 
-## Acceptance Criteria
+1. Clone the repository:
 
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a "Save Note" button and a "Clear Form" button appear in the navigation at the top of the page
-WHEN I click on the Save button
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes and the buttons in the navigation disappear
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column and a "New Note" button appears in the navigation
-WHEN I click on the "New Note" button in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
+   ```bash
+   git clone https://github.com/yourusername/express-note-taker.git
+    ```
+
+2. Install Dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+1. Start the application:
+
+    ```bash
+    npm start
+    ```
+2. Open your web browser and visit http://localhost:3001 to access the Note Taker App.
+
+3. The home page will display existing notes, and you can click on "Get Started" to create new notes.
+
+4. To create a new note, click on the "Note Title" and "Note Text" fields, enter your content, and click the save icon.
+
+5. Your new note will be added to the list on the left-hand side. To view or delete a note, click on the corresponding entry.
+
+6. To delete a note, click on the trash can icon next to the note you want to remove.
+
+7. Continue creating, viewing, and deleting notes as needed.
 
 ## Contributing
 
