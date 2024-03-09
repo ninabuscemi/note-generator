@@ -1,14 +1,12 @@
 // Including essential modules and dependencies
 const express = require('express');
 const path = require('path');
-const { clog } = require('./middleware/clog'); // Importing a custom middleware for logging purposes
 const apiRoutes = require('./routes/index.js'); // Importing routes for the API
 const app = express(); // Creating an instance of the express application
 
 const PORT = process.env.PORT || 3001; // Specifying the server port
 
-// Adding custom middleware for logging
-app.use(clog);
+
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
