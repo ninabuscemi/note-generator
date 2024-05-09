@@ -45,7 +45,6 @@ To run the Note Taker App locally, follow these steps:
 
 ![insomnia](./assets/note_gen_insomnia.gif)
 
-![insomnia](./assets/note_gen_insomnia.gif)
 
 ## Contributing
 
